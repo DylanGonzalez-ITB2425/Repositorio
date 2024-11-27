@@ -82,22 +82,13 @@ nav a:hover::after {
     background: #c3bbcc;
     border-radius: 10px;
     padding: 20px;
-    height: 450px;
-    width: 400px;
     font-family: Georgia, serif;
     color: #000000;
-    text-align: center; 
+    text-align: center;
+    height: 150px;
+    width: 250px;
 }
 
-
-.seccion_autor2 {
-    background: #c3bbcc;
-    color: #000000;
-    border-radius: 10px;
-    padding: 20px;
-    height: 450px;
-    width: 400px;
-}
 
 .seccion_autor1 h3 {
     text-wrap: balance;
@@ -121,9 +112,8 @@ nav a:hover::after {
 }
 
 
-
 #icono {
-    margin-top: 40px;
+    margin-top: 10px;
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
@@ -138,12 +128,69 @@ nav a:hover::after {
 
 }
 
+#dylan:hover {
+    color: rgba(40, 0, 142, 0.89); /* El color que deseas para resaltar la palabra */
+    font-weight: bold; /* Opcional: puedes hacerla en negrita para un mayor efecto */
+}
 
 
 
 
 
 
+
+.seccion_autor2 {
+    background: #c3bbcc;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.seccion_autor2 ul {
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Elimina el espacio interno */
+    margin: 0; /* Elimina márgenes adicionales */
+    display: inline; /* Alinea los elementos como texto en línea */
+    cursor: pointer;
+}
+
+
+
+.seccion_autor2 h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.seccion_autor2 h3,
+.seccion_autor2 ul li {
+    text-align: center;
+    justify-content: left;
+}
+
+
+/* Specific colors for each skill */
+#HTML .primera {
+    color: rgba(40, 0, 142, 0.89); /* Naranja para HTML */
+}
+
+#PYTHON .primera {
+    color: rgba(40, 0, 142, 0.89); /* Verde para PYTHON */
+}
+
+#CSS .primera {
+    color: rgba(40, 0, 142, 0.89); /* Azul para CSS */
+}
+
+#JAVASCRIPT .primera {
+    color: rgba(40, 0, 142, 0.89); /* Amarillo para JAVASCRIPT */
+}
+
+.seccion_autor2 ul li:hover {
+    color: rgba(40, 0, 142, 0.89); /* Cambia el color del texto */
+    transform: scale(1.02); /* Efecto de escala */
+}
 
 
 
@@ -165,22 +212,6 @@ nav a:hover::after {
     height: 450px;
     width: 400px;
 }
-
-.seccion_proyectos2 {
-    background: #c3bbcc;
-    color: rgb(0, 0, 0);
-    border-radius: 30px;
-    padding: 30px;
-    height: 450px;
-    width: 400px;
-
-}
-
-
-
-
-
-
 
 
 
