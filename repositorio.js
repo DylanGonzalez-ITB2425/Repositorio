@@ -6,4 +6,3 @@ function showSection(sectionId) {
     const activeSection = document.getElementById(sectionId);
     activeSection.classList.add('active');
 }
-

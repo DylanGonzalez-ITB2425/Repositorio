@@ -82,8 +82,8 @@ nav a:hover::after {
     background: #c3bbcc;
     border-radius: 10px;
     padding: 20px;
-    height: 200px;
-    width: 250px;
+    height: 450px;
+    width: 400px;
     font-family: Georgia, serif;
     color: #000000;
     text-align: center;
@@ -151,29 +151,28 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px;
+
 }
 
 .seccion_proyectos1 {
    background-color: #000000;
     color: white;
     border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    height: 300px;
-    width: 100px;
+    padding: 30px;
+    height: 200px;
+    width: 200px;
 }
 
 .seccion_proyectos2 {
    background-color: #000000;
     color: white;
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
-    height: 100px;
-    width: 400px;
+    border-radius: 30px;
+    padding: 0px;
+    height: 200px;
+    width: 200px;
 }
 
 
