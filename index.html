@@ -8,16 +8,18 @@
     <title>Portfolio de Dylan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+
+<body>
 <header>
     <a href="#" class="logo">
         <img src="itb0.png" alt="Logo del Instituto" />
     </a>
+
     <nav>
-        <a href="#" onclick="showSection('autor')" class="nav-link">Inicio</a>
-        <a href="#" onclick="showSection('proyectos')" class="nav-link">Proyectos</a>
-        <a href="#" onclick="showSection('formulario-contacto')" class="nav-link">Contacto</a>
+        <a href="#" onclick="showSection('autor')">Inicio</a>
+        <a href="#" onclick="showSection('proyectos')">Proyectos</a>
+        <a href="#" onclick="showSection('formulario-contacto')">Contacto</a>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -26,30 +28,32 @@
 
 </header>
 
+
+
+
 <main>
     <section id="autor" class="section active">
         <div class="contenedor-autor">
-            <div class="seccion_autor1 seccion-1">
+            <div class="seccion_autor1">
                 <h3>Dylan Brandon Gonzalez Lopez</h3>
 
                 <p id="subtitulo"><u>Estudiante desarrollador web</u></p>
 
-                <a id="icono" href="https://instagram.com"><ion-icon name="mail-outline"></ion-icon>
-                    <class id="dylan">dylangonzloz@gmail.com</class>
+                <a><ion-icon name="mail-outline"></ion-icon>
+                    <div id="correo_autor" onclick="copyText()">dylangonzloz@gmail.com</div>
+                    <div id="confirmacion_mensaje">¡Texto copiado al portapapeles!</div>
                 </a>
-
             </div>
 
-
-            <div class="seccion_autor2 seccion-1">
+            <div class="seccion_autor2">
                 <article>
                     <h2>Conocimientos</h2>
-                    <h3>Programming languages</h3>
+                    <h3><u>Lenguajes de programación</u></h3>
                     <ul>
-                            <li id="HTML"><span class="primera">HTML</span> - BASIC</li>
-                            <li id="PYTHON"><span class="primera">PYTHON</span> - BASIC</li>
-                            <li id="CSS"><span class="primera">CSS</span> - BASIC</li>
-                            <li id="JAVASCRIPT"><span class="primera">JAVASCRIPT</span> - BASIC</li>
+                            <li id="HTML"><span class="color">HTML</span> - BASICO</li>
+                            <li id="PYTHON"><span class="color">PYTHON</span> - BASICO</li>
+                            <li id="CSS"><span class="color">CSS</span> - BASICO</li>
+                            <li id="JAVASCRIPT"><span class="color">JAVASCRIPT</span> - BASICO</li>
                     </ul>
                 </article>
             </div>
@@ -62,18 +66,16 @@
 
 
     <section id="proyectos" class="section">
-        <div class="contenedor-proyectos">
-            <div class="seccion_proyectos1 seccion-3">
+        <div class="contenedor-proyecto">
+            <div class="seccion_proyecto1">
                 <h3>Dylan Brandon Gonzalez Lopez</h3>
-                <p>Correo el electronico</p>
+                <p><u>Estudiante desarrollador web</u></p>
             </div>
 
-
-            <div class="seccion_proyectos2 seccion-4">
-                <h3>Conocimientos</h3>
-                <p>j</p>
-            </div>
-        </div>
+            <div class="seccion_proyecto2">
+                <article>
+                    <h2>Conocimientos</h2>
+                    <h3>Lenguajes de programación</h3>
     </section>
 
 
@@ -82,18 +84,21 @@
 
     <section id="formulario-contacto" class="section">
         <h2>¡Contáctame!</h2>
-        <form class="form-container">
-            <input type="text" placeholder="Primer nombre" required>
-            <input type="text" placeholder="Apellidos" required>
-            <input type="email" placeholder="Dirección de correo electrónico" required>
+
+        <form class="formulario" action="https://formspree.io/f/xeoqrrdk" method="POST">
+
+            <input type="text" placeholder="Primer nombre" required name="name">
+            <input type="text" placeholder="Apellidos" required name="name">
+            <input type="email" placeholder="Dirección de correo electrónico" required name="name">
             <button type="submit">Enviar</button>
         </form>
     </section>
+
 </main>
 
 <footer class="footer">
-    <ul class="social-icon">
-            <li href=" " class="icon">
+    <ul class="social">
+            <li href=" " class="iconos">
                 <a href="https://github.com/DiegoCornelles-ITB2425/MDS-CodigoT03"><ion-icon name="logo-linkedin"></ion-icon></a>
                 <a href="https://github.com/DylanGonzalez-ITB2425/Repositorio"><ion-icon name="logo-github"></ion-icon></a>
                 <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>

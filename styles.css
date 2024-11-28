@@ -2,14 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Coloca el contenido y footer en columna */
-    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    flex-direction: column;
+    height: 100vh;
     background: linear-gradient(to top, rgba(40, 0, 142, 0.89), rgba(79, 0, 143, 0.89),rgba(40, 0, 142, 0.89));
-    color: #fff;
-    justify-content: space-between; /* Esto hace que el contenido se estire para llenar el espacio disponible */
+    color: white;
+    justify-content: space-between;
 }
 
-
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ header {
     height: 50px;
 }
 
-nav a {
+header nav a {
     font-weight: 600;
     padding: 10px;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ nav a {
     color: white;
 }
 
-nav a::after {
+header nav a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -48,7 +48,7 @@ nav a::after {
     transition: transform 0.25s ease-out;
 }
 
-nav a:hover::after {
+header nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -68,6 +68,8 @@ nav a:hover::after {
         opacity: 1;
     }
 }
+
+
 
 .contenedor-autor {
     display: flex;
@@ -98,6 +100,7 @@ nav a:hover::after {
     color: black;
     font-size: 15px;
     text-decoration: #ffcc00 solid;
+    font-family: "Comic Sans MS", cursive;
 }
 
 .seccion_autor1 a {
@@ -106,40 +109,61 @@ nav a:hover::after {
     text-decoration: #ffcc00 solid;
 }
 
-#subtitulo {
-    font-family: "Comic Sans MS", cursive;
-    font-style: italic;
-}
 
-
-#icono {
+.seccion_autor1 a {
     margin-top: 10px;
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
 }
 
-#dylan {
+.seccion_autor1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+#correo_autor {
     clear: left;
     vertical-align: top;
     line-height: 25px;
     font-size: 12px;
-    font-style: italic
+    font-style: italic;
+    cursor: pointer;
+    padding-left: 10px;
 
 }
 
-#dylan:hover {
-    color: rgba(40, 0, 142, 0.89); /* El color que deseas para resaltar la palabra */
-    font-weight: bold; /* Opcional: puedes hacerla en negrita para un mayor efecto */
+#correo_autor:hover {
+    color: rgba(40, 0, 142, 0.89);
+    font-weight: bold;
 }
 
-
-
-
+#confirmacion_mensaje {
+    font-size: 15px;
+    display: none;
+    background-color: rgba(40, 0, 142, 0.89);
+    color: white;
+    border-radius: 5px;
+    margin-top: 300px;
+    text-align: center;
+    height: 20px;
+    width: 220px;
+    position: absolute;
+    top: 50px;
+    left: 37%;
+    transform: translateX(-50%);
+}
 
 
 
 .seccion_autor2 {
+    font-family: Georgia, serif;
     background: #c3bbcc;
     color: #000000;
     border-radius: 10px;
@@ -166,52 +190,75 @@ nav a:hover::after {
 .seccion_autor2 h3,
 .seccion_autor2 ul li {
     text-align: center;
-    justify-content: left;
 }
 
 
-/* Specific colors for each skill */
-#HTML .primera {
-    color: rgba(40, 0, 142, 0.89); /* Naranja para HTML */
+#HTML .color {
+    color: rgba(40, 0, 142, 0.89);
 }
 
-#PYTHON .primera {
-    color: rgba(40, 0, 142, 0.89); /* Verde para PYTHON */
+#PYTHON .color {
+    color: rgba(40, 0, 142, 0.89);
 }
 
-#CSS .primera {
-    color: rgba(40, 0, 142, 0.89); /* Azul para CSS */
+#CSS .color {
+    color: rgba(40, 0, 142, 0.89);
 }
 
-#JAVASCRIPT .primera {
-    color: rgba(40, 0, 142, 0.89); /* Amarillo para JAVASCRIPT */
+#JAVASCRIPT .color {
+    color: rgba(40, 0, 142, 0.89);
 }
 
 .seccion_autor2 ul li:hover {
-    color: rgba(40, 0, 142, 0.89); /* Cambia el color del texto */
-    transform: scale(1.02); /* Efecto de escala */
+    color: rgba(40, 0, 142, 0.89);
+    transform: scale(1.02);
 }
 
 
 
-.contenedor-proyectos {
+
+
+
+.contenedor-proyecto {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
-    padding: 40px;
-
+    padding: 20px;
 }
 
-.seccion_proyectos1 {
+.seccion_proyecto1 {
     background: #c3bbcc;
-    color: rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 30px;
-    height: 450px;
-    width: 400px;
+    padding: 10px;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: center;
+    height: 300px;
+    width: 300px;
 }
+
+
+
+.seccion_proyecto2 {
+    background: #c3bbcc;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -229,7 +276,7 @@ nav a:hover::after {
 }
 
 
-.form-container input {
+.formulario input {
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -241,7 +288,7 @@ nav a:hover::after {
     color: #000000;
 }
 
-.form-container button {
+.formulario button {
     background-color: #000000;
     color: #ffffff;
     border: none;
@@ -257,34 +304,35 @@ nav a:hover::after {
 }
 
 
+
 footer {
-    margin-top: auto; /* Este es el cambio clave para asegurar que el footer se mueva al fondo */
+    margin-top: auto;
     background-color: #000000;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-.social-icon {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margen por defecto */
-    display: flex; /* Alinea los elementos horizontalmente */
-    justify-content: center; /* Centra los iconos */
-    gap: 15px; /* Espaciado entre los iconos */
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.social-icon .icon {
+.social .iconos {
     display: inline-block;
 }
 
-.social-icon a {
+.social a {
     color: white;
     font-size: 24px;
     text-decoration: none;
 }
 
-.social-icon a:hover {
+.social a:hover {
     color: #ffcc00;
 }
 
