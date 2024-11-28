@@ -13,13 +13,14 @@
 <body>
 <header>
     <a href="#" class="logo">
+
         <img src="itb0.png" alt="Logo del Instituto" />
     </a>
 
     <nav>
-        <a href="#" onclick="showSection('autor')">Inicio</a>
-        <a href="#" onclick="showSection('proyectos')">Proyectos</a>
-        <a href="#" onclick="showSection('formulario-contacto')">Contacto</a>
+        <a href="#autor" onclick="showSection('autor')">Inicio</a>
+        <a href="#proyectos" onclick="showSection('proyectos')">Proyectos</a>
+        <a href="#formulario-contacto" onclick="showSection('formulario-contacto')">Contacto</a>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -47,8 +48,8 @@
 
             <div class="seccion_autor2">
                 <article>
-                    <h2>Conocimientos</h2>
-                    <h3><u>Lenguajes de programación</u></h3>
+                    <h3>Conocimientos</h3>
+                    <h4><u>Lenguajes de programación</u></h4>
                     <ul>
                             <li id="HTML"><span class="color">HTML</span> - BÁSICO</li>
                             <li id="PYTHON"><span class="color">PYTHON</span> - BÁSICO</li>
@@ -65,18 +66,60 @@
 
 
 
-    <section id="proyectos" class="section">
-        <div class="contenedor-proyecto">
-            <div class="seccion_proyecto1">
-                <h3>Dylan Brandon Gonzalez Lopez</h3>
-                <p><u>Estudiante desarrollador web</u></p>
-            </div>
+<section id="proyectos" class="section">
+    <div class="contenedor-proyecto">
+        <!-- Contenedor para la descripción general de proyectos -->
+        <div class="descripcion-destacados">
+            <h3>Proyectos Destacados</h3>
+            <p>A continuación, encontrarás proyectos realizados durante mi formación como desarrollador web.</p>
+        </div>
 
+        <!-- Contenedor de proyectos destacados -->
+        <div class="destacados-container">
+            <!-- Primer proyecto destacado -->
             <div class="seccion_proyecto2">
                 <article>
-                    <h2>Conocimientos</h2>
-                    <h3>Lenguajes de programación</h3>
-    </section>
+                    <h2>Conversión de Archivos</h2>
+                    <p>
+                        Este proyecto realiza la conversión de un archivo <b>CSV</b> a <b>XML</b> y posteriormente a <b>JSON</b>.
+                        Se implementaron parámetros específicos para extraer la información más relevante y significativa del dataset original.
+                    </p>
+                    <!-- Enlace al archivo HTML con más detalles -->
+                    <a href="/proyectos/proyecto1.html" class="enlace-detalle">Ver más detalles</a>
+                </article>
+            </div>
+        </div>
+
+
+        <!-- Contenedor de proyectos destacados -->
+        <div class="destacados-container">
+            <!-- Primer proyecto destacado -->
+            <div class="seccion_proyecto2">
+                <article>
+                    <h2>Creación de esta Página Web</h2>
+                    <p>Este proyecto describe el proceso de creación de la página web que estás visualizando.
+                        Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar y dar estilo al contenido, permitiendo una navegación fluida.
+                    </p>
+
+                    <a href="/proyectos/proyecto1.html" class="enlace-detalle">Ver más detalles</a>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</section>
+
+
 
 
 
