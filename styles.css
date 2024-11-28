@@ -147,17 +147,19 @@ header nav a:hover::after {
 #confirmacion_mensaje {
     font-size: 15px;
     display: none;
+    width: 210px; /* Ajusta el ancho para móviles */
+    top: 342px;
     background-color: rgba(40, 0, 142, 0.89);
     color: white;
-    border-radius: 5px;
-    margin-top: 300px;
     text-align: center;
-    height: 20px;
-    width: 220px;
-    position: absolute;
-    top: 50px;
-    left: 37%;
-    transform: translateX(-50%);
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    #confirmacion_mensaje {
+        width: 210px; /* Ajusta el ancho para móviles */
+        top: 280px;    /* Ajusta la posición para móviles */
+    }
 }
 
 
@@ -302,7 +304,6 @@ header nav a:hover::after {
 .form-container button:hover {
     background-color: #333;
 }
-
 
 
 footer {

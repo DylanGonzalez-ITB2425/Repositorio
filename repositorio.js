@@ -6,6 +6,7 @@ function showSection(sectionId) {
     const activeSection = document.getElementById(sectionId);
     activeSection.classList.add('active');
 }
+
 function copyText() {
     // Obtén el contenido del div con id "correo_autor"
     const textElement = document.getElementById("correo_autor");
@@ -37,3 +38,4 @@ function copyText() {
     // Limpia la selección
     window.getSelection().removeAllRanges();
 }
+
