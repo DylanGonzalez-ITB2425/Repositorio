@@ -18,9 +18,24 @@
     </a>
 
     <nav>
-        <a href="#autor" onclick="showSection('autor')">Inicio</a>
-        <a href="#proyectos" onclick="showSection('proyectos')">Proyectos</a>
-        <a href="#formulario-contacto" onclick="showSection('formulario-contacto')">Contacto</a>
+        <ul>
+            <li><a href="#" onclick="showSection('autor')">Inicio</a></li>
+            <li>
+
+                <a href="#" onclick="showSection('proyectos')">Proyectos</a>
+                <ul class="dropdown">
+                    <li><a href="#" onclick="showSection('proyectos')">Todos los proyectos</a></li>
+                    <li><a href="#" onclick="showSection('subtema2')">Conversión de Archivos</a></li>
+                    <li><a href="#" onclick="showSection('subtema3')">Creación de esta pagina web</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="showSection('formulario-contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -28,7 +43,6 @@
     </nav>
 
 </header>
-
 
 
 
@@ -61,14 +75,9 @@
         </div>
     </section>
 
-
-
-
-
-
-<section id="proyectos" class="section">
+    <section id="proyectos" class="section">
     <div class="contenedor-proyecto">
-        <!-- Contenedor para la descripción general de proyectos -->
+
         <div class="descripcion-destacados">
             <h3>Proyectos Destacados</h3>
             <p>A continuación, encontrarás proyectos realizados durante mi formación como desarrollador web.</p>
@@ -101,23 +110,11 @@
                         Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar y dar estilo al contenido, permitiendo una navegación fluida.
                     </p>
 
-                    <a href="/proyectos/proyecto1.html" class="enlace-detalle">Ver más detalles</a>
+                    <a href="#" class="enlace-detalle">Ver más detalles</a>
                 </article>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    </div>
-</section>
+    </section>
 
 
 
@@ -138,6 +135,7 @@
     </section>
 
 </main>
+
 
 <footer class="footer">
     <ul class="social">
